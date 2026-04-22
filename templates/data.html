@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block head %}
+DATABASE{% endblock %}
+
+
+{% block bla %}
+  <div class="mycard">
+    <h1>Users</h1>
+    <ul>
+      {% for x in data %}
+        <li onclick="window.location = ''">{{ x.username }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

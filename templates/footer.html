@@ -1,0 +1,78 @@
+<style>
+    /* Footer Styling */
+    .site-footer {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        background-color: #8cbaf74d;
+        color: #fff;
+        padding: 20px 0;
+        width: 100%;
+        margin-top: auto;
+        /* Pushes to bottom if using flexbox body */
+    }
+
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-links {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        /* Space between items */
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
+        /* Allows wrapping on small screens */
+        justify-content: center;
+    }
+
+    .footer-links li {
+        font-size: 0.9rem;
+        color: #bbb;
+    }
+
+    .footer-links a {
+        color: #bbb;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+        color: #fff;
+    }
+
+    /* Specific styling for Subscribe to make it pop */
+    .subscribe-link {
+        font-weight: bold;
+        color: #007bff !important;
+    }
+
+    .subscribe-link:hover {
+        text-decoration: underline;
+    }
+
+    /* Basic Responsive tweak */
+    @media (max-width: 600px) {
+        .footer-links {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+</style>
+<footer class="site-footer">
+    <div class="footer-container">
+        <ul class="footer-links">
+            <li>&copy; 2026 Copyrights</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#related">Related</a></li>
+            <li><a href="#subscribe" class="subscribe-link">Subscribe</a></li>
+        </ul>
+    </div>
+</footer>
