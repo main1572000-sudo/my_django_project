@@ -74,17 +74,11 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'neondb',
-        'USER': 'neondb_owner',
-        'PASSWORD': 'npg_lPLfoZ3Hx6AS',
-        'HOST': 'ep-spring-mountain-a4o8d0mk.us-east-1.aws.neon.tech',
-        'PORT': '5432',
-        'OPTIONS':{
-            'sslmode': 'require',  
-        },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR/'db.sqlite3',
     }
 }
 
